@@ -1,0 +1,46 @@
+{
+  "env": {
+    "browser": true,
+    "es2021": true,
+    "jest": true
+  },
+  "extends": [
+    "airbnb",
+    "plugin:@typescript-eslint/recommended",
+    "plugin:prettier/recommended",
+    "plugin:react/recommended",
+    "prettier"
+  ],
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    "ecmaFeatures": {
+      "jsx": true
+    },
+    "ecmaVersion": "latest",
+    "sourceType": "module"
+  },
+  "plugins": ["react", "@typescript-eslint", "react-hooks", "prettier"],
+  "rules": {
+    "react/react-in-jsx-scope": "off",
+    "react/jsx-props-no-spreading": ["error", { "custom": "ignore" }],
+    "import/newline-after-import": ["error", { "count": 2 }],
+    "no-use-before-define": ["error", { "functions": true, "classes": true, "variables": true }],
+    "react/jsx-filename-extension": [1, { "extensions": [".ts", ".tsx"] }],
+    "import/no-unresolved": "error",
+    "camelcase": "error",
+    "spaced-comment": "error",
+    "semi": ["error", "never"],
+    "no-duplicate-imports": "error",
+    "no-console": "warn",
+    "no-unused-vars": "off",
+    "no-plusplus": "off",
+    "@typescript-eslint/no-unused-vars": ["warn"],
+    "max-len": ["warn", { "code": 120 }],
+    "react/prop-types": "error"
+  },
+  "settings": {
+    "import/resolver": {
+      "typescript": {}
+    }
+  }
+}

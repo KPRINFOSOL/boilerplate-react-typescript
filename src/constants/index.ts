@@ -1,0 +1,3 @@
+export const ACTION_TYPES = {
+  AUTH_LOGIN_PENDING: 'AUTH_LOGIN_PENDING',
+}
